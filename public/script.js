@@ -507,8 +507,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             try {
-                // Send to Cloudflare Worker Backend
-                const apiUrl = 'https://form-soc-it-backend.cloudflare-freund.workers.dev/api/solicitudes';
+                // Send to Cloudflare Worker Backend (Same Domain)
+                const apiUrl = '/api/solicitudes';
                 
                 const response = await fetch(apiUrl, {
                     method: 'POST',

@@ -13,3 +13,9 @@ id = "57b4bb86a9c746bfb2337c2c56518fc1"
 [[r2_buckets]]
 binding = "UPLOADS_BUCKET"
 bucket_name = "form-soc-it-uploads"
+
+# === Static Assets (Para servir el HTML/CSS/JS) ===
+[assets]
+directory = "public"
+binding = "ASSETS"
+
