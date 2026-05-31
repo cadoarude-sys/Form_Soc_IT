@@ -508,8 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Send to Cloudflare Worker Backend
-                // NOTA: Reemplazar YOUR_SUBDOMAIN cuando el Worker esté desplegado.
-                const apiUrl = 'https://form-soc-it-backend.YOUR_SUBDOMAIN.workers.dev/api/solicitudes';
+                const apiUrl = 'https://form-soc-it-backend.cloudflare-freund.workers.dev/api/solicitudes';
                 
                 const response = await fetch(apiUrl, {
                     method: 'POST',
