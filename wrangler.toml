@@ -6,7 +6,7 @@ compatibility_date = "2024-05-31"
 # Necesitas crear este namespace en Cloudflare y reemplazar el ID abajo.
 [[kv_namespaces]]
 binding = "SOLICITUDES_KV"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "57b4bb86a9c746bfb2337c2c56518fc1"
 
 # === Cloudflare R2 Binding (Para guardar los archivos adjuntos) ===
 # Necesitas crear este bucket en Cloudflare R2.
