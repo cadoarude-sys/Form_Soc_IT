@@ -1,4 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- 0. DARK MODE LOGIC ---
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    
+    // Check saved theme or system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.body.classList.add('dark-theme');
+        if(themeToggleBtn) themeToggleBtn.textContent = '☀️';
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+            themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    }
+
     // --- 1. WIZARD LOGIC ---
     let currentStep = 1;
     const totalSteps = 6;

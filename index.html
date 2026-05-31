@@ -12,12 +12,17 @@
 </head>
 <body>
     <div class="container" id="pdf-container">
-        <header class="form-header">
+        <header class="form-header" style="position: relative;">
             <div class="header-top">
-                <h1>Formulario de Solicitud de Recurso</h1>
-                <button type="button" id="clearDraftBtn" class="btn btn-outline btn-sm" style="display: none;">
-                    Limpiar Borrador
-                </button>
+                <h1 style="padding-right: 120px;">Formulario de Solicitud de Recurso</h1>
+                <div class="header-actions" style="display: flex; gap: 0.5rem; position: absolute; right: 0; top: 0;">
+                    <button type="button" id="themeToggleBtn" class="btn btn-outline btn-sm" title="Alternar Modo Oscuro" style="padding: 0.5rem; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                        🌙
+                    </button>
+                    <button type="button" id="clearDraftBtn" class="btn btn-outline btn-sm" style="display: none;">
+                        Limpiar Borrador
+                    </button>
+                </div>
             </div>
             <p>Por favor, complete todos los campos requeridos para procesar su solicitud tecnológica de manera eficiente.</p>
         </header>
